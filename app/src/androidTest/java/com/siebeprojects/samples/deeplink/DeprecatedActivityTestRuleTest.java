@@ -45,13 +45,13 @@ public class DeprecatedActivityTestRuleTest extends AbstractTest {
         // Wait for app relaunch
         waitForAppRelaunch(PACKAGENAME);
 
-        // Check that the resultview is visible
+        // Check that the resultview label is visible
         onView(withId(R.id.resultview)).check(matches(isDisplayed()));
     }
 
     @Test
     public void manualDeepLinkTest() {
-        // Click auto deeplink button in the activity
+        // Click manual deeplink button in the activity screen
         onView(withId(R.id.manualdeeplinkbutton)).perform(click());
 
         // Click button in the web page
@@ -60,7 +60,7 @@ public class DeprecatedActivityTestRuleTest extends AbstractTest {
         // Wait for app relaunch
         waitForAppRelaunch(PACKAGENAME);
 
-        // Check that the resultview is visible
+        // Check that the resultview label is visible
         onView(withId(R.id.resultview)).check(matches(isDisplayed()));
     }
 }

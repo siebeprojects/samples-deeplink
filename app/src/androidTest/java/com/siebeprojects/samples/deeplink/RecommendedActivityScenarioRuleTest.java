@@ -45,7 +45,7 @@ public class RecommendedActivityScenarioRuleTest extends AbstractTest {
         // wait for app relaunch
         waitForAppRelaunch(PACKAGENAME);
 
-        // Check that the resultview is visible
+        // Check that the resultview label is visible
         onView(withId(R.id.resultview)).check(matches(isDisplayed()));
     }
 
@@ -60,7 +60,7 @@ public class RecommendedActivityScenarioRuleTest extends AbstractTest {
         // wait for app relaunch
         waitForAppRelaunch(PACKAGENAME);
 
-        // Check that the resultview is visible
+        // Check that the resultview label is visible
         onView(withId(R.id.resultview)).check(matches(isDisplayed()));
     }
 }
