@@ -37,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void manualDeepLink() {
         resultView.setVisibility(View.GONE);
-        Uri uri = Uri.parse("https://siebeprojects.com/test/manualdeeplink.html?appId=com.siebeprojects.samples.deeplink");
+        Uri uri = Uri.parse("https://<hostname>/manualdeeplink.html?appId=com.siebeprojects.samples.deeplink");
         ChromeCustomTabs.open(this, uri);
     }
 
     private void autoDeepLink() {
         resultView.setVisibility(View.GONE);
-        Uri uri = Uri.parse("https://siebeprojects.com/test/autodeeplink.html?appId=com.siebeprojects.samples.deeplink");
+        Uri uri = Uri.parse("https://<hostname>/autodeeplink.html?appId=com.siebeprojects.samples.deeplink");
         ChromeCustomTabs.open(this, uri);
     }
 }
